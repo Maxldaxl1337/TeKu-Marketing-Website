@@ -25,9 +25,9 @@ observer.observe(document.querySelector('.desc2'));
 observer.observe(document.querySelector('.desc3'));
 // observer.observe(document.querySelector('.desc4'));
 
-observer.observe(document.querySelector('.pricing-title'));
-observer.observe(document.querySelector('.pricing-item-1'));
-observer.observe(document.querySelector('.pricing-item-2'));
-observer.observe(document.querySelector('.pricing-item-3'));
+// observer.observe(document.querySelector('.pricing-title'));
+// observer.observe(document.querySelector('.pricing-item-1'));
+// observer.observe(document.querySelector('.pricing-item-2'));
+// observer.observe(document.querySelector('.pricing-item-3'));
 
 observer.observe(document.querySelector('.contact-title'));

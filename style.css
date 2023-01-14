@@ -66,11 +66,61 @@ p {
 
 #cookie-consent:hover {
 	cursor: pointer;
-	background: #ffa9be;
+	background: #436af5;
+	transition: 5ms;
 	box-shadow: 0 0 6px 2px #00000020;
 } 
 
-/* cookie disclaimer -- */
+
+[data-ca3_icon]::before {
+    font-weight: normal;
+    content: attr(data-ca3_icon);
+}
+
+.ca3-scroll-down-arrow {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+	height: 60px;
+	width: 80px;
+	margin: 0px 0 0 -40px;
+	line-height: 60px;
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	color: #FFF;
+	text-align: center;
+	font-size: 70px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
 
 .container {
 	padding: 100px 5%;
@@ -79,6 +129,10 @@ p {
 div#navigation {
 	padding: 30px 6% 0px 6%;
 	height: 66px;
+}
+
+.logo69 {
+	flex: auto;
 }
 
 #navigation p {
@@ -109,6 +163,7 @@ div#navigation {
 	color: #4a82ab;
 }
 
+/*
 #hamburger-menu-button {
 	display: none;
 	background: #528fbb;
@@ -142,7 +197,7 @@ div#hamburger-menu {
 	animation: slide-in-menu 0.2s;
 	box-shadow: 0px 0px 20px 20px #00000040;
 }
-
+*/
 
 .logo-nav {
 	display: grid;
@@ -171,7 +226,7 @@ section.information-wScreen {
 	/* width: 256px; */
 	animation: slide-up 0.5s forwards 0.4s;
 }
-
+z
 .illustration1 img {
 	height: 100%;
 	width: 100%;
@@ -336,7 +391,7 @@ section.information-wScreen {
 }
 
 /* pricing section */
-
+/*
 .pricing-title {
 	padding: 10px 2%;
 	border-left: 8px solid #6385ff;
@@ -438,13 +493,13 @@ a.pricing-button {
 	cursor: pointer;
 	filter: brightness(1.2);
 }
-
+*/
 /* contact us */
-
 .contact-title {
 	padding: 10px 2%;
 	border-left: 8px solid #6385ff;
 	margin-left: 4%;
+	margin-top: 3%;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
 	opacity: 0;
@@ -486,7 +541,6 @@ section#contact-us form input, section#contact-us form textarea {
 }
 
 /* footer */
-
 footer .container {
     background: #f2f2f2;
     color: #181818;
@@ -731,7 +785,7 @@ iframe {
 	.feature-screen {
 		height: 278px;
 	}
-
+	/*
 	.pricing-section .container {
 		display: grid;
 		grid-template-columns: auto;
@@ -749,7 +803,7 @@ iframe {
 		line-height: 1.4;
 		color: #4c4c4c;
 	}
-
+	*/
 	footer .container {
 		grid-template-columns: 50% 50%;
 	}
@@ -813,7 +867,7 @@ iframe {
 		height: 28px;
 		filter: drop-shadow(0px 6px 14px gray);
 	}
-
+	/*
 	#hamburger-menu-button {
 		padding: 8px 14px;
 		margin: 4px 0px 0px 20px !important;
@@ -822,6 +876,7 @@ iframe {
 	div#hamburger-menu {
 		left: 30%;
 	}
+	*/
 }
 
 @media only screen and (max-width: 450px) {
