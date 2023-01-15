@@ -1,10 +1,6 @@
 body {
 	font-family: "Lexend Deca" !important;
-	background: url('./assets/wallpaper.png');
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-	user-select: none;
-	-webkit-user-select: none;
+	background: url(./assets/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,9 +13,28 @@ p {
 	font-weight: 100;
 }
 
+.blurrytext {
+	background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 6px;
+    background-color: #10121680;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.blurrysubtext {
+	background: transparent;
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
+	background-color: #ffffff77;
+	padding: 4px;
+	border-radius: 10px
+}
+
 /* cookie disclaimer */
 #cookie-disclaimer-overlay {
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	height: calc(100% - 96px);
 	width: 100%;
@@ -71,64 +86,25 @@ p {
 	box-shadow: 0 0 6px 2px #00000020;
 } 
 
-
-[data-ca3_icon]::before {
-    font-weight: normal;
-    content: attr(data-ca3_icon);
-}
-
-.ca3-scroll-down-arrow {
-	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-.ca3-scroll-down-link {
-  cursor:pointer;
-	height: 60px;
-	width: 80px;
-	margin: 0px 0 0 -40px;
-	line-height: 60px;
-	position: absolute;
-	left: 50%;
-	bottom: 0px;
-	color: #FFF;
-	text-align: center;
-	font-size: 70px;
-	z-index: 100;
-	text-decoration: none;
-	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-
-	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
-	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
-	animation:         ca3_fade_move_down 2s ease-in-out infinite;
-}
-
-
-/*animated scroll arrow animation*/
-@-webkit-keyframes ca3_fade_move_down {
-  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -webkit-transform:translate(0,20px); opacity: 0; }
-}
-@-moz-keyframes ca3_fade_move_down {
-  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -moz-transform:translate(0,20px); opacity: 0; }
-}
-@keyframes ca3_fade_move_down {
-  0%   { transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { transform:translate(0,20px); opacity: 0; }
+.cloud-section {
+	background: transparent;
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
+	background-color: #ffffff77;
 }
 
 .container {
-	padding: 100px 5%;
+	padding: 100px 4%;
+}
+
+#container-boxen {
+	background-color: rgb(241, 241, 241);
 }
 
 div#navigation {
 	padding: 30px 6% 0px 6%;
 	height: 66px;
+	z-index: 1;
 }
 
 .logo69 {
@@ -221,7 +197,7 @@ section.information-wScreen {
 
 .illustration1 {
 	grid-column: 1;
-	opacity: 0;
+	opacity: 1;
 	height: 328px;
 	/* width: 256px; */
 	animation: slide-up 0.5s forwards 0.4s;
@@ -251,7 +227,7 @@ z
 	font-size: 15px;
 	line-height: 1.6;
 	margin-top: 10px;
-	color: #28344c;
+	color: #000000;
 }
 
 .information-wScreen .download-app {
@@ -260,8 +236,8 @@ z
 
 /* section 2 (cloud) */
 
-.cloud-section {
-	background: #f9f9f9c2;
+#cloud-section-blur {
+	backdrop-filter: blur(50px);
 }
 
 .cloud-section .container {
@@ -271,7 +247,7 @@ z
 
 .title-cloud {
 	grid-column: 1;
-	opacity: 0;
+	opacity: 1;
 	animation: slide-up 0.5s forwards 0.2s;
 	animation-play-state: paused;
 }
@@ -287,7 +263,7 @@ z
 	grid-column: 2;
 	line-height: 1.8;
 	padding: 0px 0px 0px 24px;
-	opacity: 0;
+	opacity: 1;
 	animation: slide-up 0.5s forwards 0.3s;
 	animation-play-state: paused;
 }
@@ -315,7 +291,7 @@ z
 
 .feature-1 {
 	grid-column: 1;
-	opacity: 0;
+	opacity: 1;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
 }
@@ -499,7 +475,6 @@ a.pricing-button {
 	padding: 10px 2%;
 	border-left: 8px solid #6385ff;
 	margin-left: 4%;
-	margin-top: 3%;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
 	opacity: 0;
@@ -515,6 +490,10 @@ a.pricing-button {
 	max-width: 40%;
 	line-height: 1.4;
 	color: #4c4c4c;
+}
+
+.contact-section {
+	background-color: #fff;
 }
 
 .contact-section form {
