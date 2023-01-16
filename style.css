@@ -1,11 +1,17 @@
 body {
 	font-family: "Lexend Deca" !important;
-	background: url(./assets/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg);
+	/* background: url(./assets/_DSC9335.jpg); */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
 	font-size: 22px;
 	font-weight: bold;
+	pointer-events: none;
+}
+
+h2 {
+	font-size: 50px;
+	pointer-events: none;
 }
 
 p {
@@ -15,21 +21,24 @@ p {
 
 .blurrytext {
 	background: transparent;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(6px);
-    border-radius: 6px;
-    background-color: #10121680;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 6px;
+	background-color: #ffffff80;
 	padding: 10px;
 	border-radius: 20px;
+	display: inline-block;
+	pointer-events: none;
 }
 
 .blurrysubtext {
 	background: transparent;
-	-webkit-backdrop-filter: blur(7px);
-	backdrop-filter: blur(7px);
-	background-color: #ffffff77;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	background-color: #ffffff80;
 	padding: 4px;
-	border-radius: 10px
+	border-radius: 10px;
+	pointer-events: none;
 }
 
 /* cookie disclaimer */
@@ -90,11 +99,11 @@ p {
 	background: transparent;
 	-webkit-backdrop-filter: blur(7px);
 	backdrop-filter: blur(7px);
-	background-color: #ffffff77;
+	background-color: #d9d9d957;
 }
 
 .container {
-	padding: 100px 4%;
+	padding: 50px 4%;
 }
 
 #container-boxen {
@@ -102,9 +111,10 @@ p {
 }
 
 div#navigation {
-	padding: 30px 6% 0px 6%;
-	height: 66px;
-	z-index: 1;
+    padding: 15px 6% 10px 6%;
+    height: 60px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
 }
 
 .logo69 {
@@ -112,7 +122,7 @@ div#navigation {
 }
 
 #navigation p {
-	color: #454a50;
+	color: #000000;
 	font-family: 'Lexend Deca';
 	font-size: 18px;
 	cursor: pointer;
@@ -123,6 +133,7 @@ div#navigation {
 #navigation a {
 	color: inherit;
 	text-decoration: inherit;
+	transition: 0.4s;
 }
 
 #navigation .selected {
@@ -188,11 +199,18 @@ div#hamburger-menu {
 /* section 1 */
 
 section.information-wScreen {
-	display: grid;
-	padding: 100px 6%;
-	grid-template-columns: max-content auto;
-	width: 100%;
+	display: flex;
+	padding: 100px 6% 416px 6%;
+	grid-template-columns: max-content;
+	/* width: 75%; */
 	box-sizing: border-box;
+	flex-direction: column;
+	height: 120vh;
+	justify-content: flex-end;
+	background: url(./assets/_DSC9259.jpg);
+	background-position: center;
+	background-size: cover;
+	margin-bottom: -316px;
 }
 
 .illustration1 {
@@ -210,13 +228,15 @@ z
 
 .informational-text {
 	grid-column: 2;
-	padding: 20px 0px 0px 40px;
+	/* padding: 20px 0px 0px 40px; */
 	opacity: 0;
 	animation: slide-up 0.6s forwards 0.4s;
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
+	backdrop-filter: blur(11px);
+	margin-top: 10px;
 }
 
 .informational-text h2 {
@@ -226,8 +246,9 @@ z
 .informational-text p {
 	font-size: 15px;
 	line-height: 1.6;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 	color: #000000;
+	backdrop-filter: blur(7px);
 }
 
 .information-wScreen .download-app {
@@ -237,7 +258,7 @@ z
 /* section 2 (cloud) */
 
 #cloud-section-blur {
-	backdrop-filter: blur(50px);
+	backdrop-filter: blur(5px);
 }
 
 .cloud-section .container {
@@ -697,7 +718,7 @@ iframe {
 
 /* responsive design */
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 940px) {
 	.nav-item {
 		display: none !important;
 	}
