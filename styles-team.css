@@ -19,22 +19,6 @@ p {
 	font-weight: 100;
 }
 
-/* SLIDESHOW */
-.fade {
-	animation-name: fade;
-	animation-duration: 1s;
-  }
-
-  @keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size 
-  @media only screen and (max-width: 300px) {
-	.text {font-size: 11px}
-  }*/
-
 .blurrytext {
 	background: transparent;
 	backdrop-filter: blur(5px);
@@ -55,10 +39,6 @@ p {
 	padding: 4px;
 	border-radius: 10px;
 	pointer-events: none;
-}
-
-#boldinfotop {
-	font-style: italic;
 }
 
 /* cookie disclaimer */
@@ -124,10 +104,6 @@ p {
 
 .container {
 	padding: 50px 4%;
-}
-
-.container-top {
-	padding: 35px 20%;
 }
 
 #container-boxen {
@@ -229,21 +205,12 @@ section.information-wScreen {
 	/* width: 75%; */
 	box-sizing: border-box;
 	flex-direction: column;
-	height: 116vh;
+	height: 70vh;
 	justify-content: flex-end;
 	background: url(./assets/_DSC9259.jpg);
 	background-position: center;
 	background-size: cover;
-	margin-bottom: -370px;
-	transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-	/* animation: carousell 3s infinite; */
-}
-
-@keyframes carousell {
-	0% { background-image: url(./assets/_DSC9259.jpg);}
-	05% { background-image: url(./assets/_DSC9335.jpg);}
-	100% { background-image: url(./assets/_DSC9259.jpg);}
-	
+	margin-bottom: -316px;
 }
 
 .illustration1 {
@@ -261,17 +228,15 @@ z
 
 .informational-text {
 	grid-column: 2;
-	padding: -1px 0px 0px 40px;
+	/* padding: 20px 0px 0px 40px; */
 	opacity: 0;
 	animation: slide-up 0.6s forwards 0.4s;
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
-	backdrop-filter: blur(7px);
-	margin-top: 5px;
-	display: block;
-	
+	backdrop-filter: blur(11px);
+	margin-top: 10px;
 }
 
 .informational-text h2 {
@@ -299,12 +264,6 @@ z
 .cloud-section .container {
 	display: grid;
 	grid-template-columns: 40% auto;
-}
-
-.cloud-section .container-top {
-	display: grid;
-	grid-template-columns: 40% auto;
-	animation: slide-up 0.5s forwards 0.4s;
 }
 
 .title-cloud {
@@ -347,17 +306,6 @@ z
 
 .features-section .container p {
 	padding: 20px 40px 0px 40px;
-	color: #4b5569;
-	line-height: 1.5;
-}
-
-.features-section .container-top {
-	display: grid;
-	text-align: center;
-}
-
-.features-section .container-top p {
-	padding: 10px 40px 0px 40px;
 	color: #4b5569;
 	line-height: 1.5;
 }
