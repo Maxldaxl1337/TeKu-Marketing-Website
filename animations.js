@@ -1,3 +1,15 @@
+// SLIDESHOW PICS TITLESCREEN //
+let carousell = 0;
+let carousellImages = ["./assets/_DSC8341.jpg", "./assets/_DSC8355.jpg"]
+
+setInterval(() => {
+    if (carousell > carousellImages.length - 1) {
+        carousell = 0;
+    }
+    document.getElementsByClassName("information-wScreen")[0].style.backgroundImage = `url(${carousellImages[carousell]})`
+    carousell++
+}, 3000);
+
 const observer = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
@@ -9,9 +21,6 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-// SLIDESHOW //
-let slideIndex = 0;
-// showSlides();
 
 observer.observe(document.querySelector('.title-cloud'));
 observer.observe(document.querySelector('.text-cloud'));
@@ -35,15 +44,3 @@ observer.observe(document.querySelector('.desc3'));
 // observer.observe(document.querySelector('.pricing-item-3'));
 
 observer.observe(document.querySelector('.contact-title'));
-
-// SLIDESHOW PICS TITLESCREEN //
-let carousell = 0;
-let carousellImages = ["./assets/_DSC8341.jpg", "./assets/_DSC8355.jpg"]
-
-setInterval(() => {
-    if (carousell > carousellImages.length - 1) {
-        carousell = 0;
-    }
-    document.getElementsByClassName("information-wScreen")[0].style.backgroundImage = `url(${carousellImages[carousell]})`
-    carousell++
-}, 3000);
