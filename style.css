@@ -384,110 +384,7 @@ z
 	/* text-align: right; */
 }
 
-/* pricing section */
-/*
-.pricing-title {
-	padding: 10px 2%;
-	border-left: 8px solid #6385ff;
-	margin-left: 4%;
-	animation: slide-up 0.5s forwards 0.4s;
-	animation-play-state: paused;
-	opacity: 0;
-}
 
-.pricing-title h2 {
-	font-size: 36px;
-	margin-bottom: 10px;
-}
-
-.pricing-title p {
-	font-size: 16px;
-	max-width: 40%;
-	line-height: 1.4;
-	color: #4c4c4c;
-}
-
-.pricing-section {
-	background: white;
-	scroll-margin-top: 20px;
-}
-
-.pricing-section .container {
-	display: grid;
-	grid-template-columns: 33% 33% 33%;
-	padding: 50px 5% 100px 5%;
-}
-
-.pricing-item-1 {
-	grid-column: 1;
-	animation: slide-up 0.5s forwards 0.4s;
-	animation-play-state: paused;
-	opacity: 0;
-}
-
-.pricing-item-2 {
-	grid-column: 2;
-	animation: slide-up 0.5s forwards 0.5s;
-	animation-play-state: paused;
-	opacity: 0;
-}
-
-.pricing-item-3 {
-	grid-column: 3;
-	animation: slide-up 0.5s forwards 0.6s;
-	animation-play-state: paused;
-	opacity: 0;
-}
-
-.pricing-section .container div {
-	background: whitesmoke;
-	margin: 0px 10px;
-	border-radius: 8px;
-	overflow: hidden;
-	text-align: center;
-	box-shadow: 0px 0px 8px 2px #2929291f;
-}
-
-.pricing-background {
-	margin: 0 !important;
-	padding: 20px 40px 20px 40px;
-	text-align: center;
-	background: #5e8ed0 !important;
-	border-radius: 0px !important;
-	color: white;
-	line-height: 1.8;
-}
-
-.pricing-background h2 {
-	font-family: 'Nunito' !important;
-	font-size: 30px;
-}
-
-.pricing-background p {
-	font-size: 12px;
-}
-
-.pricing-section ul {
-	padding: 10px 6%;
-	line-height: 3;
-	color: #616161;
-}
-
-a.pricing-button {
-	background: #6385ff;
-	color: white;
-	text-decoration: none;
-	padding: 10px 20px;
-	border-radius: 25px;
-	line-height: 6;
-	transition: 0.3s filter;
-}
-
-.pricing-button:hover {
-	cursor: pointer;
-	filter: brightness(1.2);
-}
-*/
 /* contact us */
 .contact-title {
 	padding: 10px 2%;
@@ -934,7 +831,7 @@ iframe {
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 50px;
     justify-content: center;
     align-content: center;
 }
