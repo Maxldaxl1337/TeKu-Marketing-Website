@@ -27,12 +27,12 @@ const observer = new IntersectionObserver(entries => {
 });
 
 
-observer.observe(document.querySelector('.title-cloud'));
-observer.observe(document.querySelector('.text-cloud'));
+// observer.observe(document.querySelector('.title-cloud'));
+// observer.observe(document.querySelector('.text-cloud'));
 
-observer.observe(document.querySelector('.feature-1'));
-observer.observe(document.querySelector('.feature-2'));
-observer.observe(document.querySelector('.feature-3'));
+// observer.observe(document.querySelector('.feature-1'));
+// observer.observe(document.querySelector('.feature-2'));
+// observer.observe(document.querySelector('.feature-3'));
 
 observer.observe(document.querySelector('.screen1'));
 observer.observe(document.querySelector('.screen2'));
@@ -48,7 +48,4 @@ observer.observe(document.querySelector('.desc3'));
 // observer.observe(document.querySelector('.pricing-item-2'));
 // observer.observe(document.querySelector('.pricing-item-3'));
 
-observer.observe(document.querySelector('.contact-title'));
-
-
-observer.observe(document.querySelector('.certificates'));
+// observer.observe(document.querySelector('.contact-title'));
