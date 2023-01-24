@@ -3,12 +3,17 @@ let carousell = 0;
 let carousellImages = ["./assets/_DSC8341.jpg", "./assets/_DSC8355.jpg"]
 
 setInterval(() => {
+    carousellFunction()
+}, 3000);
+carousellFunction()
+
+function carousellFunction() {
     if (carousell > carousellImages.length - 1) {
         carousell = 0;
     }
     document.getElementsByClassName("information-wScreen")[0].style.backgroundImage = `url(${carousellImages[carousell]})`
     carousell++
-}, 3000);
+}
 
 const observer = new IntersectionObserver(entries => {
     // Loop over the entries
