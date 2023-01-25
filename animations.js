@@ -58,7 +58,7 @@ observer.observe(document.querySelector('.certificates'));
 document.getElementById('proj-one').addEventListener('mouseover', (e) => {
     document.getElementById('proj-text-one').style.top = '-180px'
     document.getElementById('proj-link-one').style.top = '-180px'
-    document.getElementById('proj-img-one').style.filter = 'brightness(0.5)'
+    document.getElementById('proj-img-one').style.filter = 'brightness(0.6)'
 })
 document.getElementById('proj-one').addEventListener('mouseleave', (e) => {
     document.getElementById('proj-text-one').style.top = '0px'
@@ -69,7 +69,7 @@ document.getElementById('proj-one').addEventListener('mouseleave', (e) => {
 document.getElementById('proj-two').addEventListener('mouseover', (e) => {
     document.getElementById('proj-text-two').style.top = '-180px'
     document.getElementById('proj-link-two').style.top = '-180px'
-    document.getElementById('proj-img-two').style.filter = 'brightness(0.5)'
+    document.getElementById('proj-img-two').style.filter = 'brightness(0.6)'
 })
 document.getElementById('proj-two').addEventListener('mouseleave', (e) => {
     document.getElementById('proj-text-two').style.top = '0px'
@@ -80,7 +80,7 @@ document.getElementById('proj-two').addEventListener('mouseleave', (e) => {
 document.getElementById('proj-three').addEventListener('mouseover', (e) => {
     document.getElementById('proj-text-three').style.top = '-180px'
     document.getElementById('proj-link-three').style.top = '-180px'
-    document.getElementById('proj-img-three').style.filter = 'brightness(0.5)'
+    document.getElementById('proj-img-three').style.filter = 'brightness(0.6)'
 })
 document.getElementById('proj-three').addEventListener('mouseleave', (e) => {
 
@@ -92,7 +92,7 @@ document.getElementById('proj-three').addEventListener('mouseleave', (e) => {
 document.getElementById('proj-four').addEventListener('mouseover', (e) => {
     document.getElementById('proj-text-four').style.top = '-180px'
     document.getElementById('proj-link-four').style.top = '-180px'
-    document.getElementById('proj-img-four').style.filter = 'brightness(0.5)'
+    document.getElementById('proj-img-four').style.filter = 'brightness(0.6)'
 })
 document.getElementById('proj-four').addEventListener('mouseleave', (e) => {
     document.getElementById('proj-text-four').style.top = '0px'
@@ -103,7 +103,7 @@ document.getElementById('proj-four').addEventListener('mouseleave', (e) => {
 document.getElementById('proj-five').addEventListener('mouseover', (e) => {
     document.getElementById('proj-text-five').style.top = '-180px'
     document.getElementById('proj-link-five').style.top = '-180px'
-    document.getElementById('proj-img-five').style.filter = 'brightness(0.5)'
+    document.getElementById('proj-img-five').style.filter = 'brightness(0.6)'
 })
 document.getElementById('proj-five').addEventListener('mouseleave', (e) => {
     document.getElementById('proj-text-five').style.top = '0px'
@@ -114,7 +114,7 @@ document.getElementById('proj-five').addEventListener('mouseleave', (e) => {
 document.getElementById('proj-six').addEventListener('mouseover', (e) => {
     document.getElementById('proj-text-six').style.top = '-180px'
     document.getElementById('proj-link-six').style.top = '-180px'
-    document.getElementById('proj-img-six').style.filter = 'brightness(0.5)'
+    document.getElementById('proj-img-six').style.filter = 'brightness(0.6)'
 })
 document.getElementById('proj-six').addEventListener('mouseleave', (e) => {
     document.getElementById('proj-text-six').style.top = '0px'

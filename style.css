@@ -679,6 +679,7 @@ iframe {
 	.feature-screen {
 		height: 278px;
 	}
+
 	/*
 	.pricing-section .container {
 		display: grid;
@@ -698,6 +699,7 @@ iframe {
 		color: #4c4c4c;
 	}
 	*/
+
 	footer .container {
 		grid-template-columns: 50% 50%;
 	}
@@ -761,6 +763,7 @@ iframe {
 		height: 28px;
 		filter: drop-shadow(0px 6px 14px gray);
 	}
+
 	/*
 	#hamburger-menu-button {
 		padding: 8px 14px;
@@ -819,21 +822,26 @@ iframe {
 }
 
 .certificates h1 {
-    font-size: 2em;
-    margin: 0px 0px 20px 6%;
+    font-size: 3em;
+    margin: 0px 0px 10px 0%;
+	text-align: center;
 }
 
 .certificates p {
-    margin: 0px 0px 40px 6%;
+    margin: 0px 0px 55px 0%;
+	text-align: center;
 }
 
 .certificate-container {
     display: flex;
     width: 100vw;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 45px;
     justify-content: center;
     align-content: center;
+    margin: 20px 0px 150px 0%;
+    padding: 0px 40px;
+    box-sizing: border-box;
 }
 
 .certificate-container div {
@@ -867,19 +875,25 @@ iframe {
     text-decoration: none;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
-    background: #42ffdd26;
+    background: #4b8aff26;
 }
 
 .certificate-container a:hover {
-    filter: brightness(1.3);
+    filter: brightness(2);
     color: white;
-    background: #42ffdcb7;
+    background: #023ee3b7;
     box-shadow: 0px 0px 0px 4px inset var(--primary-color);
 }
 
 .certificate-container div img {
     height: 100%;
     transition: filter 0.3s;
+}
+
+.costumers-section {
+	background-color: rgb(241, 241, 241);
+	padding: 65px 0px 1px;
+	margin: 0px 0px 90px 0px;
 }
 
 /* animate screenshots */
@@ -928,7 +942,7 @@ iframe {
 .about-me h1:hover {
     border: 2px solid var(--primary-color);
     animation: fade-abt 3s ease infinite;
-}
+}*/
 
 @keyframes fade-abt {
     0% {
@@ -946,4 +960,4 @@ iframe {
     100% {
         box-shadow: 0px 0px 0px 0px var(--primary-color);
     }
-}s
+}
