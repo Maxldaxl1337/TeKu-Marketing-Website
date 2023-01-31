@@ -958,6 +958,16 @@ iframe {
 	margin: 0px 0px 65px 0px;
 }
 
+button#send-mail {
+	width: min-content;
+	background: #6385ff;
+	border: 0px;
+	padding: 12px 40px;
+	font-size: 20px;
+	border-radius: 6px;
+	color: white;
+}
+
 /* animate screenshots */
 
 @keyframes float {
