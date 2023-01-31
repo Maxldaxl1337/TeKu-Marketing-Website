@@ -52,3 +52,16 @@ function showSlides(n) {
     }
   slides[slideIndex-1].style.display = "block";
 }
+
+// Mails 
+function sendMail() {
+
+  var formattedBody = document.getElementById('contact-us-email').value + "\n" + document.getElementById('contact-us-phone').value + "\n" + document.getElementById('contact-us-name').value + " " + document.getElementById('contact-us-surname').value + "\n" + document.getElementById('contact-us-content').value;
+  var mailToLink = `mailto:maxihuetter123@gmail.com?subject=${document.getElementById('contact-us-object').value}&body=${encodeURIComponent(formattedBody)}`;
+  window.location.href = mailToLink;
+}
+
+document.getElementById('send-mail').addEventListener('click', (e) => {
+  e.preventDefault()
+  sendMail()
+})

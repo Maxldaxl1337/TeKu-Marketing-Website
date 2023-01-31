@@ -417,12 +417,13 @@ z
 
 section#contact-us form {
 	display: grid;
-	grid-template-areas: 
-	"name surname"
-	"telephone telephone"
-	"email email"
-	"object object"
-	"description description";
+	grid-template-areas:
+		"name surname"
+		"telephone telephone"
+		"email email"
+		"object object"
+		"description description"
+		"button nothing";
 	grid-gap: 10px;
 }
 
@@ -617,10 +618,6 @@ iframe {
 		display: none !important;
 	}
 
-	#hamburger-menu-button {
-		display: inline-block;
-	}
-
 	section.information-wScreen {
 		display: grid;
 		padding: 100px 2%;
@@ -764,16 +761,6 @@ iframe {
 		filter: drop-shadow(0px 6px 14px gray);
 	}
 
-	/*
-	#hamburger-menu-button {
-		padding: 8px 14px;
-		margin: 4px 0px 0px 20px !important;
-	}
-
-	div#hamburger-menu {
-		left: 30%;
-	}
-	*/
 }
 
 @media only screen and (max-width: 450px) {
