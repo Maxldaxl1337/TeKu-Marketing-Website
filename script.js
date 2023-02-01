@@ -25,8 +25,7 @@ instagramlink.addEventListener("click", (e) => {
         document.getElementById('cookie-disclaimer-overlay').style.display = ''
     })
 
-//customer reviews
-
+// customer reviews
 var slideIndex = 1;
 showSlides(slideIndex);
 
