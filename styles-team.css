@@ -72,43 +72,7 @@ div#navigation {
 	text-decoration-thickness: 2px;
 	text-decoration-color: #528fba3d;
 	color: #4a82ab;
-}
-
-/*
-#hamburger-menu-button {
-	display: none;
-	background: #528fbb;
-	padding: 12px 16px;
-	border-radius: 4px;
-	transition-property: background, box-shadow;
-	transition: 0.5s;
-	-webkit-user-drag: none;
-	margin: 12px 0px 0px 20px !important;
-	color: white !important;
-	text-decoration: none !important;
-}
-
-#hamburger-menu-button:hover {
-	background: #60a6d8;
-}
-
-#hamburger-menu-button a {
-	pointer-events: none;
-}
-
-div#hamburger-menu {
-	display: none;
-	background: #141924;
-	position: absolute;
-	z-index: 1;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	left: 66%;
-	animation: slide-in-menu 0.2s;
-	box-shadow: 0px 0px 20px 20px #00000040;
-}
-*/
+} 
 
 .logo-nav {
 	display: grid;
