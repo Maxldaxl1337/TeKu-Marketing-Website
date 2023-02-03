@@ -13,14 +13,3 @@ document.getElementById("instagramlink").style.cursor = "pointer";
 instagramlink.addEventListener("click", (e) => {
         window.open("https://www.instagram.com/");
     })
-
-    
-    // // handle cookie disclaimer
-    // if (localStorage.getItem('cookies') == undefined) {
-    //     document.getElementById('cookie-disclaimer-overlay').style.display = 'initial'
-    // }
-    
-    // document.getElementById('cookie-consent').addEventListener('click', () => {
-    //     localStorage.setItem('cookies', true)
-    //     document.getElementById('cookie-disclaimer-overlay').style.display = ''
-    // })
