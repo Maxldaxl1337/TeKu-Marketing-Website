@@ -1,4 +1,4 @@
-// SLIDESHOW PICS TITLESCREEN //
+// SLIDESHOW PICS TITLESCREEN
 let carousell = 0;
 let carousellImages = ["assets/bild1.jpg", "assets/bild2.jpg"]
 
