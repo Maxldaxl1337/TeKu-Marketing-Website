@@ -29,7 +29,6 @@ const observer = new IntersectionObserver(entries => {
 
 // observer.observe(document.querySelector('.title-cloud'));
 // observer.observe(document.querySelector('.text-cloud'));
-
 // observer.observe(document.querySelector('.feature-1'));
 // observer.observe(document.querySelector('.feature-2'));
 // observer.observe(document.querySelector('.feature-3'));

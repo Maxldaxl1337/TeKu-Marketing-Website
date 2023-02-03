@@ -1,6 +1,6 @@
 // SLIDESHOW PICS TITLESCREEN //
 let carousell = 0;
-let carousellImages = ["assets/customer/kunde.jpg", "assets/_DSC8355.jpg"]
+let carousellImages = ["assets/customer/kunde.jpg", "https://media.discordapp.net/attachments/491280326174441494/1056700706259730472/IMG_1438.jpg?width=349&height=465"]
 
 setInterval(() => {
     carousellFunction()
