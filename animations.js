@@ -1,6 +1,6 @@
 // SLIDESHOW PICS TITLESCREEN //
 let carousell = 0;
-let carousellImages = ["assets/_DSC8341.jpg", "assets/_DSC8355.jpg"]
+let carousellImages = ["assets/customer/kunde.jpg", "assets/_DSC8355.jpg"]
 
 setInterval(() => {
     carousellFunction()
