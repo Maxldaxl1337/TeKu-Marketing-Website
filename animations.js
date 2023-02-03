@@ -1,6 +1,6 @@
 // SLIDESHOW PICS TITLESCREEN //
 let carousell = 0;
-let carousellImages = ["./assets/_DSC8341.jpg", "./assets/_DSC8355.jpg"]
+let carousellImages = ["/assets/_DSC8341.jpg", "/assets/_DSC8355.jpg"]
 
 setInterval(() => {
     carousellFunction()
@@ -49,7 +49,6 @@ observer.observe(document.querySelector('.desc3'));
 // observer.observe(document.querySelector('.pricing-item-3'));
 
 observer.observe(document.querySelector('.contact-title'));
-
 observer.observe(document.querySelector('.certificates'));
 
 // VERSTECKTES ELEMENT KUNDEN // 

@@ -126,6 +126,7 @@ div#navigation {
 
 .logo69 {
 	flex: auto;
+	pointer-events: none;
 }
 
 #navigation p {
