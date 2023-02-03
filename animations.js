@@ -4,7 +4,7 @@ let carousellImages = ["assets/bild1.jpg", "assets/bild2.jpg"]
 
 setInterval(() => {
     carousellFunction()
-}, 3000);
+}, 4000);
 carousellFunction()
 
 function carousellFunction() {
