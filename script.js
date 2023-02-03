@@ -1,3 +1,32 @@
+//hamburger menu
+// let hamMenuOpen = false
+// document.getElementById('hamburger-menu-button').addEventListener('click', () => {
+//     toggleHamMenu()
+// })
+// function toggleHamMenu() {
+//     if (hamMenuOpen) {
+//         hamMenuOpen = false
+//         document.getElementsByTagName('body')[0].style.overflow = ""
+//         document.getElementById('hamburger-menu').style.animationName = "slide-out-menu"
+//         setTimeout(() => {
+//             document.getElementById('hamburger-menu').style.display = "none"
+//         }, 200);
+//     } else if (accMenuOpen) {
+//         toggleAccMenu()
+//     } else {
+//         hamMenuOpen = true
+//         document.getElementsByTagName('body')[0].style.overflow = "hidden"
+//         document.getElementById('hamburger-menu').style.display = "inline-block"
+//         document.getElementById('hamburger-menu').style.animationName = "slide-in-menu"
+//     }
+// }
+
+document.addEventListener('click', (e) => {
+    if (e.target.id !== 'hamburger-menu' && hamMenuOpen == true && e.target.id !== 'hamburger-menu-button') {
+        toggleHamMenu()
+    }
+})
+
 // scoial links impressum 
 document.getElementById("facebooklink").style.cursor = "pointer"; 
 facebooklink.addEventListener("click", (e) => {
