@@ -1,6 +1,5 @@
 body {
 	font-family: "Lexend Deca" !important;
-	/* background: url(./assets/_DSC9335.jpg); */
 }
 
 h1, h3, h4, h5, h6 {
@@ -19,92 +18,12 @@ p {
 	font-weight: 100;
 }
 
-.titleteam {
+.title-team {
+	padding: 10px;
+}
+#titleteam {
 	font-size: 50px;
 	pointer-events: none;
-}
-
-.blurrytext {
-	background: transparent;
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border-radius: 6px;
-	background-color: #ffffff80;
-	padding: 10px;
-	border-radius: 20px;
-	display: inline-block;
-	pointer-events: none;
-}
-
-.blurrysubtext {
-	background: transparent;
-	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
-	background-color: #ffffff80;
-	padding: 4px;
-	border-radius: 10px;
-	pointer-events: none;
-}
-
-/* cookie disclaimer */
-#cookie-disclaimer-overlay {
-	position: fixed;
-	z-index: 1;
-	height: calc(100% - 96px);
-	width: 100%;
-	pointer-events: none;
-	display: none;
-}
-
-.cookie-disclaimer p {
-	font-family: 'Lexend Deca';
-	line-height: 1.3;
-	font-size: 16px;
-}
-
-.cookie-disclaimer a {
-	color: #417297;
-	text-decoration: underline;
-}
-
-.cookie-disclaimer {
-	padding: 20px;
-	width: 400px;
-	background: white;
-	border-radius: 4px;
-	float: right;
-	position: sticky;
-	top: calc(100vh - 190px);
-	box-shadow: 2px 2px 5px 2px #0000002b;
-	right: 20px;
-	pointer-events: all;
-	opacity: 0;
-	animation: slide-up 0.5s forwards 0.6s;
-}
-
-#cookie-consent {
-	background: #6385ff;
-	float: right;
-	padding: 10px 20px;
-	border-radius: 4px;
-	margin-top: 10px;
-	color: white;
-	font-family: 'Nunito';
-	transition: all 0.3s;
-}
-
-#cookie-consent:hover {
-	cursor: pointer;
-	background: #436af5;
-	transition: 5ms;
-	box-shadow: 0 0 6px 2px #00000020;
-} 
-
-.cloud-section {
-	background: transparent;
-	-webkit-backdrop-filter: blur(7px);
-	backdrop-filter: blur(7px);
-	background-color: #d9d9d957;
 }
 
 .container {

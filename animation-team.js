@@ -1,19 +1,19 @@
 // SLIDESHOW PICS TITLESCREEN //
-let carousell = 0;
-let carousellImages = ["./assets/_DSC8341.jpg", "./assets/_DSC8355.jpg"]
+// let carousell = 0;
+// let carousellImages = ["./assets/_DSC8341.jpg", "./assets/_DSC8355.jpg"]
 
-setInterval(() => {
-    carousellFunction()
-}, 3000);
-carousellFunction()
+// setInterval(() => {
+//     carousellFunction()
+// }, 3000);
+// carousellFunction()
 
-function carousellFunction() {
-    if (carousell > carousellImages.length - 1) {
-        carousell = 0;
-    }
-    document.getElementsByClassName("information-wScreen")[0].style.backgroundImage = `url(${carousellImages[carousell]})`
-    carousell++
-}
+// function carousellFunction() {
+//     if (carousell > carousellImages.length - 1) {
+//         carousell = 0;
+//     }
+//     document.getElementsByClassName("information-wScreen")[0].style.backgroundImage = `url(${carousellImages[carousell]})`
+//     carousell++
+// }
 
 const observer = new IntersectionObserver(entries => {
     // Loop over the entries
@@ -37,11 +37,11 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('.screen1'));
 observer.observe(document.querySelector('.screen2'));
 observer.observe(document.querySelector('.screen3'));
-//observer.observe(document.querySelector('.screen4'));
+observer.observe(document.querySelector('.screen4'));
 observer.observe(document.querySelector('.desc1'));
 observer.observe(document.querySelector('.desc2'));
 observer.observe(document.querySelector('.desc3'));
-//observer.observe(document.querySelector('.desc4'));
+observer.observe(document.querySelector('.desc4'));
 
 // observer.observe(document.querySelector('.pricing-title'));
 // observer.observe(document.querySelector('.pricing-item-1'));

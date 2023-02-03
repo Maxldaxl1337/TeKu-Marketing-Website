@@ -1,6 +1,6 @@
 // SLIDESHOW PICS TITLESCREEN //
 let carousell = 0;
-let carousellImages = ["/assets/_DSC8341.jpg", "/assets/_DSC8355.jpg"]
+let carousellImages = ["assets/_DSC8341.jpg", "assets/_DSC8355.jpg"]
 
 setInterval(() => {
     carousellFunction()
@@ -30,6 +30,7 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('.title-cloud'));
 observer.observe(document.querySelector('.text-cloud'));
 
+observer.observe(document.querySelector('.feature-0'));
 observer.observe(document.querySelector('.feature-1'));
 observer.observe(document.querySelector('.feature-2'));
 observer.observe(document.querySelector('.feature-3'));
