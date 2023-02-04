@@ -21,11 +21,11 @@
 //     }
 // }
 
-document.addEventListener('click', (e) => {
-    if (e.target.id !== 'hamburger-menu' && hamMenuOpen == true && e.target.id !== 'hamburger-menu-button') {
-        toggleHamMenu()
-    }
-})
+// document.addEventListener('click', (e) => {
+//     if (e.target.id !== 'hamburger-menu' && hamMenuOpen == true && e.target.id !== 'hamburger-menu-button') {
+//         toggleHamMenu()
+//     }
+// })
 
 // scoial links impressum 
 document.getElementById("facebooklink").style.cursor = "pointer"; 

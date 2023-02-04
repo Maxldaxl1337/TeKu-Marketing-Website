@@ -139,6 +139,7 @@ div#hamburger-menu {
 	-webkit-backdrop-filter: blur(7px);
 	backdrop-filter: blur(7px);
 	background-color: #d9d9d957;
+	pointer-events: none;
 }
 
 .container {
@@ -210,7 +211,8 @@ section.information-wScreen {
 	display: flex;
 	padding: 100px 6% 416px 6%;
 	grid-template-columns: max-content;
-	/* width: 75%; */
+	width: auto;
+	height: auto;
 	box-sizing: border-box;
 	flex-direction: column;
 	height: 116vh;
@@ -218,9 +220,8 @@ section.information-wScreen {
 	/*background: url(./assets/_DSC9259.jpg); */
 	background-position: center;
 	background-size: cover;
-	margin-bottom: -370px;
+	margin-bottom: -300px;
 	transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-	/* animation: carousell 3s infinite; */
 }
 
 .illustration1 {
@@ -311,6 +312,7 @@ z
 
 .features-section {
 	background: #f9f9f9c2;
+	pointer-events: none;
 }
 
 .feature-icon {
@@ -343,6 +345,7 @@ z
 	opacity: 0;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
+	pointer-events: none;
 }
 
 .feature-1 {
@@ -350,6 +353,7 @@ z
 	opacity: 0;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
+	pointer-events: none;
 }
 
 .feature-2 {
@@ -357,6 +361,7 @@ z
 	opacity: 0;
 	animation: slide-up 0.5s forwards 0.5s;
 	animation-play-state: paused;
+	pointer-events: none;
 }
 
 .feature-3 {
@@ -364,6 +369,7 @@ z
 	opacity: 0;
 	animation: slide-up 0.5s forwards 0.6s;
 	animation-play-state: paused;
+	pointer-events: none;
 }
 
 /* section 3 (info about functions in app) */
@@ -376,6 +382,7 @@ z
 
 .features-wScreen-section {
 	background-color: white;
+	pointer-events: none;
 }
 
 .feature-wScreen {
@@ -905,7 +912,7 @@ div#hamburger-menu {
 }
 
 #feature-kunde {
-	width: 20vw;
+	width: 25vw;
 	border-radius: 5%;
 	box-shadow: 5px 5px 5px rgb(163, 168, 173);
 }
@@ -919,30 +926,33 @@ div#hamburger-menu {
 	display: none;
 	padding: 45px 25%;
 	text-align: center;
+	pointer-events: none;
   }
   
   .prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -30px;
-	padding: 16px;
-	color: rgba(136, 136, 136, 0.622);
-	font-weight: bold;
-	font-size: 25px;
-	border-radius: 0 6px 6px 0;
-	user-select: none;
-  }
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    margin-left: 250px;
+    padding: 13px;
+    color: rgba(136, 136, 136, 0.622);
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    user-select: none;
+}
   
   .next {
 	position: absolute;
 	right: 0;
-	border-radius: 6px 0 0 6px;
+	border-radius: 10px;
+	margin-right: 250px;
   }
   
   .prev:hover, .next:hover {
-	background-color: rgba(0, 1, 47, 0.602);
+	background-color: rgba(96, 96, 96, 0.45);
 	color: white;
 	transition: 0.3s;
   }
@@ -957,6 +967,7 @@ div#hamburger-menu {
 
 .certificates {
     align-items: flex-start;
+	animation: slide-up 0.5s;
 }
 
 .certificates h1 {

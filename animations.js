@@ -1,6 +1,6 @@
 // SLIDESHOW PICS TITLESCREEN
 let carousell = 0;
-let carousellImages = ["assets/bild1.jpg", "assets/bild2.jpg"]
+let carousellImages = ["assets/bild0.jpg", "assets/bild1.jpg", "assets/bild2.jpg"]
 
 setInterval(() => {
     carousellFunction()
@@ -49,6 +49,7 @@ observer.observe(document.querySelector('.desc3'));
 // observer.observe(document.querySelector('.pricing-item-2'));
 // observer.observe(document.querySelector('.pricing-item-3'));
 
+observer.observe(document.querySelector(".certificates"));
 observer.observe(document.querySelector('.contact-title'));
 observer.observe(document.querySelector('.certificates'));
 
