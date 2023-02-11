@@ -84,12 +84,21 @@ function showSlides(n) {
 // Mails 
 function sendMail() {
 
-  var formattedBody = document.getElementById('contact-us-email').value + "\n" + document.getElementById('contact-us-phone').value + "\n" + document.getElementById('contact-us-name').value + " " + document.getElementById('contact-us-surname').value + "\n" + document.getElementById('contact-us-content').value;
-  var mailToLink = `mailto:maxihuetter123@gmail.com?subject=${document.getElementById('contact-us-object').value}&body=${encodeURIComponent(formattedBody)}`;
-  window.location.href = mailToLink;
+var formattedBody = document.getElementById('contact-us-email').value + "\n" + document.getElementById('contact-us-phone').value + "\n" + document.getElementById('contact-us-name').value + " " + document.getElementById('contact-us-surname').value + "\n" + document.getElementById('contact-us-content').value;
+var mailToLink = `mailto:maxihuetter123@gmail.com?subject=${document.getElementById('contact-us-object').value}&body=${encodeURIComponent(formattedBody)}`;
+window.location.href = mailToLink;
 }
 
-document.getElementById('send-mail').addEventListener('click', (e) => {
-  e.preventDefault()
-  sendMail()
+document.getElementById('conact-us-email').addEventListener('click', (e) => {
+e.preventDefault()
+sendMail()
 })
+
+
+// document.getElementById("send-mail").style.cursor = "pointer"; 
+// send-mail.addEventListener("click", (e) => {
+//         var newDataRef = database.ref().push();
+//         newDataRef.set({
+//           document.getElementById('contact-us-email').value + "\n" + document.getElementById('contact-us-phone').value + "\n" + document.getElementById('contact-us-name').value + " " + document.getElementById('contact-us-surname').value + "\n" + document.getElementById('contact-us-content').value;
+//         });
+//     })
