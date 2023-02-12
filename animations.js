@@ -38,11 +38,12 @@ observer.observe(document.querySelector('.feature-3'));
 observer.observe(document.querySelector('.screen1'));
 observer.observe(document.querySelector('.screen2'));
 observer.observe(document.querySelector('.screen3'));
-//observer.observe(document.querySelector('.screen4'));
+observer.observe(document.querySelector('.screen4'));
 observer.observe(document.querySelector('.desc1'));
 observer.observe(document.querySelector('.desc2'));
 observer.observe(document.querySelector('.desc3'));
-//observer.observe(document.querySelector('.desc4'));
+observer.observe(document.querySelector('.desc4'));
+observer.observe(document.querySelector('.desc5'));
 
 // observer.observe(document.querySelector('.pricing-title'));
 // observer.observe(document.querySelector('.pricing-item-1'));

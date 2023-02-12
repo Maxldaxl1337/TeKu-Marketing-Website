@@ -47,7 +47,8 @@ p {
 }
 
 #infotoptext {
-	font-size: 15px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 /* cookie disclaimer */
@@ -258,6 +259,8 @@ z
 	opacity: 1;
 	animation: slide-up 0.5s forwards 0.2s;
 	animation-play-state: paused;
+	height: 65%;
+	width: 65%;
 }
 
 .title-cloud h2 {
@@ -270,10 +273,12 @@ z
 .text-cloud {
 	grid-column: 2;
 	line-height: 1.8;
-	padding: 0px 0px 0px 24px;
+	padding: 30px 0px 0px 0px;
 	opacity: 1;
 	animation: slide-up 0.5s forwards 0.3s;
 	animation-play-state: paused;
+	vertical-align: middle;
+	font-size: 50px;
 }
 
 /* section 3 (info about functions in app) */
@@ -288,11 +293,6 @@ z
 	scale: 10vw;
 	
 }
-
-.feature-icon:hover {
-	-ms-transform: scale(1.5); /* IE 9 */
-	-webkit-transform: scale(1.5); /* Safari 3-8 */
-	transform: scale(1.5);}
 
 .features-section .container {
 	display: grid;
@@ -352,7 +352,6 @@ z
 .features-wScreen-section {
 	background-color: white;
 	pointer-events: none;
-	z-index: 2;
 }
 
 .feature-wScreen {
@@ -373,16 +372,24 @@ z
 	opacity: 0;
 }
 
-.desc1, .desc2, .desc3, .desc4 {
+.desc1, .desc2, .desc3, .desc4, .desc5 {
 	animation: slide-up 0.5s forwards 0.5s;
 	animation-play-state: paused;
 	opacity: 0;
 }
 
+#textconclusion {
+	font-size: 18px;
+	background-color: rgb(241, 241, 241);
+	padding: 35px;
+	border-radius: 10px;
+	border: #4b5569;
+}
 .feature-screen img {
 	width: 100%;
 	height: 100%;
 }
+
 
 .feature-screen:nth-child(odd) {
 	grid-column: 1;
@@ -396,9 +403,14 @@ z
 
 .feature-wScreen .content:nth-child(odd) {
 	grid-column: 1;
-	/* text-align: right; */
 }
 
+#morebutton {
+	text-align: center;
+	font-weight: bold;
+	background-color: rgb(241, 241, 241);
+	padding-bottom: 20px;
+}
 
 /* contact us */
 .contact-title {
