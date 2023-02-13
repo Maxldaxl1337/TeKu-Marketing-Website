@@ -89,10 +89,10 @@ var mailToLink = `mailto:maxihuetter123@gmail.com?subject=${document.getElementB
 window.location.href = mailToLink;
 }
 
-document.getElementById('conact-us-email').addEventListener('click', (e) => {
-e.preventDefault()
-sendMail()
-})
+// document.getElementById('conact-us-email').addEventListener('click', (e) => {
+// e.preventDefault()
+// sendMail()
+// })
 
 
 // document.getElementById("send-mail").style.cursor = "pointer"; 
