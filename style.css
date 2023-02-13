@@ -42,12 +42,12 @@ p {
 
 #boldinfotop {
 	font-style: italic;
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bold;
 }
 
 #infotoptext {
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: bold;
 }
 
@@ -346,6 +346,12 @@ z
 	pointer-events: none;
 }
 
+.mehrlesen {
+	opacity: 0;
+	animation: slide-up 0.5s forwards 0.3s;
+	animation-play-state: paused;
+}
+
 /* section 4 */
 
 .features-wScreen-section {
@@ -387,6 +393,7 @@ z
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
 	text-align: justify;
+	pointer-events: none;
 }
 
 #picgarantie {

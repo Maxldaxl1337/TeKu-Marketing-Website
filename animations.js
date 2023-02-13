@@ -44,6 +44,7 @@ observer.observe(document.querySelector('.desc2'));
 observer.observe(document.querySelector('.desc3'));
 observer.observe(document.querySelector('.desc4'));
 observer.observe(document.querySelector('.desc5'));
+observer.observe(document.querySelector('.mehrlesen'));
 
 // observer.observe(document.querySelector('.pricing-title'));
 // observer.observe(document.querySelector('.pricing-item-1'));
