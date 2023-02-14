@@ -298,6 +298,7 @@ section.information-wScreen {
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
 	pointer-events: none;
+	margin-bottom: 80px;
 }
 
 .feature-0 {
