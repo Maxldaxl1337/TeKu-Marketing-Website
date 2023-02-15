@@ -102,3 +102,12 @@ window.location.href = mailToLink;
 //           document.getElementById('contact-us-email').value + "\n" + document.getElementById('contact-us-phone').value + "\n" + document.getElementById('contact-us-name').value + " " + document.getElementById('contact-us-surname').value + "\n" + document.getElementById('contact-us-content').value;
 //         });
 //     })
+
+
+// VIEW MORE BUTTON
+
+
+container1.addEventListener("click", (e) => {
+        // window.open("./viewmore.html");
+        location.href = './viewmore.html'
+    })

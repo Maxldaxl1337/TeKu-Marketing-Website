@@ -18,19 +18,12 @@ p {
 	font-weight: 100;
 }
 
-.feature-00 {
-	margin-top: 20px;
-	margin-bottom: 55px;
-	font-weight: bold;
-	text-align: center;
+.title-team {
+	padding: 10px;
 }
-
-#boldinfotop {
-	font-size: 60px;
-}
-
-#infotoptext {
-	font-size: 30px;
+#titleteam {
+	font-size: 50px;
+	pointer-events: none;
 }
 
 .container {
@@ -95,7 +88,6 @@ div#navigation {
 }
 
 /* section 1 */
-
 section.information-wScreen {
 	display: flex;
 	padding: 100px 6% 416px 6%;
@@ -283,6 +275,159 @@ z
 .feature-wScreen .content:nth-child(odd) {
 	grid-column: 1;
 	/* text-align: right; */
+}
+
+/* pricing section */
+/*
+.pricing-title {
+	padding: 10px 2%;
+	border-left: 8px solid #6385ff;
+	margin-left: 4%;
+	animation: slide-up 0.5s forwards 0.4s;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
+.pricing-title h2 {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+.pricing-title p {
+	font-size: 16px;
+	max-width: 40%;
+	line-height: 1.4;
+	color: #4c4c4c;
+}
+
+.pricing-section {
+	background: white;
+	scroll-margin-top: 20px;
+}
+
+.pricing-section .container {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	padding: 50px 5% 100px 5%;
+}
+
+.pricing-item-1 {
+	grid-column: 1;
+	animation: slide-up 0.5s forwards 0.4s;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
+.pricing-item-2 {
+	grid-column: 2;
+	animation: slide-up 0.5s forwards 0.5s;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
+.pricing-item-3 {
+	grid-column: 3;
+	animation: slide-up 0.5s forwards 0.6s;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
+.pricing-section .container div {
+	background: whitesmoke;
+	margin: 0px 10px;
+	border-radius: 8px;
+	overflow: hidden;
+	text-align: center;
+	box-shadow: 0px 0px 8px 2px #2929291f;
+}
+
+.pricing-background {
+	margin: 0 !important;
+	padding: 20px 40px 20px 40px;
+	text-align: center;
+	background: #5e8ed0 !important;
+	border-radius: 0px !important;
+	color: white;
+	line-height: 1.8;
+}
+
+.pricing-background h2 {
+	font-family: 'Nunito' !important;
+	font-size: 30px;
+}
+
+.pricing-background p {
+	font-size: 12px;
+}
+
+.pricing-section ul {
+	padding: 10px 6%;
+	line-height: 3;
+	color: #616161;
+}
+
+a.pricing-button {
+	background: #6385ff;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 25px;
+	line-height: 6;
+	transition: 0.3s filter;
+}
+
+.pricing-button:hover {
+	cursor: pointer;
+	filter: brightness(1.2);
+}
+*/
+/* contact us */
+.contact-title {
+	padding: 10px 2%;
+	border-left: 8px solid #6385ff;
+	margin-left: 4%;
+	animation: slide-up 0.5s forwards 0.4s;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
+.contact-title h2 {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+.contact-title p {
+	font-size: 16px;
+	max-width: 40%;
+	line-height: 1.4;
+	color: #4c4c4c;
+}
+
+.contact-section {
+	background-color: #fff;
+}
+
+.contact-section form {
+	padding: 50px 5% 100px 5%;
+}
+
+section#contact-us form {
+	display: grid;
+	grid-template-areas: 
+	"name surname"
+	"telephone telephone"
+	"email email"
+	"object object"
+	"description description";
+	grid-gap: 10px;
+}
+
+section#contact-us form input, section#contact-us form textarea {
+    padding: 10px 10px;
+    background-color: #fafafa;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 6px;
+    font-family: 'Nunito';
 }
 
 /* footer */
@@ -530,7 +675,25 @@ iframe {
 	.feature-screen {
 		height: 278px;
 	}
+	/*
+	.pricing-section .container {
+		display: grid;
+		grid-template-columns: auto;
+		padding: 50px 5% 100px 5%;
+	}
 
+	.pricing-item-1, .pricing-item-2, .pricing-item-3 {
+		grid-column: 1;
+		margin: 20px 0px !important;
+	}
+
+	.pricing-title p {
+		font-size: 16px;
+		max-width: 94%;
+		line-height: 1.4;
+		color: #4c4c4c;
+	}
+	*/
 	footer .container {
 		grid-template-columns: 50% 50%;
 	}
@@ -594,6 +757,16 @@ iframe {
 		height: 28px;
 		filter: drop-shadow(0px 6px 14px gray);
 	}
+	/*
+	#hamburger-menu-button {
+		padding: 8px 14px;
+		margin: 4px 0px 0px 20px !important;
+	}
+
+	div#hamburger-menu {
+		left: 30%;
+	}
+	*/
 }
 
 @media only screen and (max-width: 450px) {
@@ -634,4 +807,19 @@ iframe {
 	footer h3 {
 		margin-top: 30px;
 	}
+}
+
+/* VIEW MORE */
+
+.more {
+	align-content: center;
+	text-align: center;
+	text-align: justify;
+	color: #548bfb;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 200px;
+	padding-top: 300px;
+	padding-bottom: 300px;
+	padding-left: 620px;
 }
