@@ -26,7 +26,7 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-
+observer.observe(document.querySelector('.logo420'));
 observer.observe(document.querySelector('.title-cloud'));
 observer.observe(document.querySelector('.text-cloud'));
 
