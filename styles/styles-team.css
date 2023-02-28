@@ -23,6 +23,7 @@ p {
 	margin-bottom: 55px;
 	font-weight: bold;
 	text-align: center;
+	padding-top: 150px;
 }
 
 #boldinfotop {
@@ -42,10 +43,14 @@ p {
 }
 
 div#navigation {
-    padding: 15px 6% 10px 6%;
+    padding: 10px 6% 10px 6%;
     height: 60px;
     z-index: 1;
-    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: rgb(250 250 250 / 75%);
+    backdrop-filter: blur(10px);
 }
 
 .logo69 {
