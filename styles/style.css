@@ -211,9 +211,6 @@ section.information-wScreen {
 }
 
 /* section 2 (cloud) */
-
-
-
 .cloud-section .container {
 	display: grid;
 	grid-template-columns: 40% auto;
@@ -252,8 +249,7 @@ section.information-wScreen {
 	font-size: 50px;
 }
 
-/* section 3 (info about functions in app) */
-
+/* section 3 */
 .features-section {
 	background: #f9f9f9c2;
 }
@@ -337,7 +333,6 @@ section.information-wScreen {
 }
 
 /* section 4 */
-
 .features-wScreen-section {
 	background-color: white;
 	pointer-events: none;
@@ -387,8 +382,9 @@ section.information-wScreen {
 }
 
 #picgarantie {
-width: 20%;
+width: 25vh;
 padding-right: 15px;
+object-fit: contain;
 }
 
 .feature-screen img {
@@ -403,13 +399,14 @@ padding-right: 15px;
 
 .feature-wScreen .content {
 	grid-column: 2;
-	padding: 10%;
+	padding-left: 13%;
+	padding-right: 13%;
 }
 
 .feature-wScreen .content-conclusion {
 	grid-column: 2;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 .feature-wScreen .content:nth-child(odd) {
@@ -423,6 +420,9 @@ padding-right: 15px;
 	padding-bottom: 20px;
 }
 
+#headerarbeitsweise {
+	font-size: 49px;
+}
 /* contact us */
 .contact-title {
 	padding: 10px 2%;
