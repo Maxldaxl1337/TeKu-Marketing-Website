@@ -105,9 +105,7 @@ window.location.href = mailToLink;
 
 
 // VIEW MORE BUTTON
-
-
 container1.addEventListener("click", (e) => {
         // window.open("./viewmore.html");
-        location.href = "./pages/viewmore.html"
+        location.href = "./viewmore.html"
     })
