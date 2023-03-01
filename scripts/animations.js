@@ -124,3 +124,14 @@ document.getElementById('proj-six').addEventListener('mouseleave', (e) => {
     document.getElementById('proj-link-six').style.top = '0px'
     document.getElementById('proj-img-six').style.filter = ''
 })
+
+// SCROLLBAR FADE
+
+const scrollDiv = document.querySelector('.scroll-div');
+
+function startScroll() {
+    scrollDiv.style.backgroundColor = 'rgb(250 250 250 / 75%)';
+    scrollDiv.style.backdropFilter = 'blur(8px)';
+}
+
+window.addEventListener('scroll', startScroll);
