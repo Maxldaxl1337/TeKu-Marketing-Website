@@ -47,14 +47,13 @@ observer.observe(document.querySelector('.desc4'));
 observer.observe(document.querySelector('.desc5'));
 observer.observe(document.querySelector('.mehrlesen'));
 
-// observer.observe(document.querySelector('.pricing-title'));
-// observer.observe(document.querySelector('.pricing-item-1'));
-// observer.observe(document.querySelector('.pricing-item-2'));
-// observer.observe(document.querySelector('.pricing-item-3'));
+observer.observe(document.querySelector(".slideshow-container"));
+observer.observe(document.querySelector(".headerkunden"));
+observer.observe(document.querySelector(".certificate-container"));
 
-observer.observe(document.querySelector(".certificates"));
 observer.observe(document.querySelector('.contact-title'));
-observer.observe(document.querySelector('.certificates'));
+observer.observe(document.querySelector('.contact-form'));
+
 
 // VERSTECKTES ELEMENT KUNDEN // 
 

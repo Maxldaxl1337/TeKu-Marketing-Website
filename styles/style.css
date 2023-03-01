@@ -4,8 +4,8 @@ body {
 }
 
 h1, h3, h4, h5, h6 {
-	font-size: 22px;
-	font-weight: bold;
+	font-size: 23px;
+	font-weight: 900;
 	pointer-events: none;
 }
 
@@ -15,7 +15,7 @@ h2 {
 }
 
 p {
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 100;
 }
 
@@ -96,8 +96,26 @@ p {
 }
 
 .container-logo {
+	display: grid;
 	padding: 50px 4%;
-	background-color: rgba(210, 211, 219, 0.307);
+	background-color: rgba(241, 241, 241, 0.262);
+	position: relative;
+	z-index: 1;
+
+}
+
+.backgroundimgtop {
+	background-image: url(../assets/istockphoto-1244945104-1024x1024.jpeg);
+	background-position: center;
+	background-size: auto;
+	filter: blur(6px);
+	backdrop-filter: blur(6px);
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .container-top {
@@ -111,7 +129,7 @@ p {
 div#navigation {
     padding: 10px 6% 10px 6%;
     height: 60px;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 0;
     width: 90%;
@@ -121,6 +139,7 @@ div#navigation {
 
 .logo69 {
 	flex: auto;
+	opacity: 0;
 }
 
 #navigation p {
@@ -208,13 +227,11 @@ section.information-wScreen {
 .informational-text p {
 	font-size: 15px;
 	line-height: 1.6;
-	/* margin-top: 10px; */
 	color: #000000;
 
 }
 
 /* section 2 (cloud) */
-
 .cloud-section .container-top {
 	display: grid;
 	grid-template-columns: 40% auto;
@@ -223,7 +240,7 @@ section.information-wScreen {
 
 .title-cloud {
 	grid-column: 1;
-	opacity: 1;
+	opacity: 0;
 	animation: slide-up 0.5s forwards 0.2s;
 	animation-play-state: paused;
 }
@@ -279,16 +296,23 @@ section.information-wScreen {
 
 .features-section .container-top p {
 	padding: 10px 40px 0px 40px;
-	color: #4b5569;
+	color: #414a5c;
 	line-height: 1.5;
 }
 
+
 .feature-00 {
+	grid-column: 2;
 	opacity: 0;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
 	pointer-events: none;
-	margin-bottom: 120px;
+	justify-content: center;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .feature-0 {
@@ -339,6 +363,11 @@ section.information-wScreen {
 	display: grid;
 	margin: 0px 0px 70px 0px;
 	line-height: 1.6;
+}
+
+.feature-wScreen p {
+	color: #2a3039;
+	text-align: justify;
 }
 
 .feature-screen {
@@ -402,8 +431,8 @@ object-fit: contain;
 
 .feature-wScreen .content-conclusion {
 	grid-column: 2;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 17%;
+	padding-right: 17%;
 }
 
 .feature-wScreen .content:nth-child(odd) {
@@ -428,6 +457,12 @@ object-fit: contain;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
 	opacity: 0;
+}
+
+.contact-form {
+	opacity: 0;
+	animation: slide-up 0.7s forwards 0.4s;
+	animation-play-state: paused;
 }
 
 .contact-title h2 {
@@ -566,12 +601,223 @@ iframe {
 	background: transparent;
 }
 
-.slide-up-animation {
-	animation: slide-up 1s forwards;
+/* Slideshow container/costumers */
+.feature-kunde {
+	display: flex;
+		flex-wrap: wrap;
+		gap: 45px;
+		justify-content: center;
+		align-content: center;
+		margin: 20px 0px 20px 0%;
+		padding: 6px 40px;
+		box-sizing: border-box;
+		transition: 0.2s;
+	}
+	
+	#feature-kunde {
+		width: 25vw;
+	border-radius: 5%;
+	box-shadow: 5px 5px 5px rgb(163, 168, 173);
 }
 
-.slide-up-animation-running {
-	animation-play-state: running;
+.headerkunden {
+	opacity: 0;
+	animation: slide-up 0.4s forwards 0.4s;
+	animation-play-state: paused;
+}
+
+.slideshow-container {
+	position: relative;
+	background: #fffffff1;
+	opacity: 0;
+	animation: slide-up 0.5s forwards 0.4s;
+	animation-play-state: paused;
+}
+
+.mySlides {
+	display: none;
+	padding: 45px 25%;
+	text-align: center;
+	pointer-events: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    margin-left: 250px;
+    padding: 13px;
+    color: rgba(136, 136, 136, 0.622);
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.next {
+	position: absolute;
+	right: 0;
+	border-radius: 10px;
+	margin-right: 250px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(96, 96, 96, 0.45);
+	color: white;
+	transition: 0.3s;
+}
+
+q {font-style: italic;}
+.author {
+	color: rgb(0, 28, 81);
+	font-weight: bold;
+	font-size: large;
+	margin-top: 10px;
+}
+
+.certificates {
+	align-items: flex-start;
+	animation: slide-up 0.5s;
+	padding-top: 55px;
+}
+
+.certificates h1 {
+	font-size: 3em;
+    margin: 0px 0px 10px 0%;
+	text-align: center;
+}
+
+.certificates p {
+	margin: 15px 0px 5px 0%;
+	text-align: center;
+}
+
+.certificate-container {
+	display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0px 150px 0%;
+    padding: 0px 40px;
+    box-sizing: border-box;
+	opacity: 0;
+	animation: slide-up 0.4s forwards 0.4s;
+	animation-play-state: paused;
+}
+
+.certificate-container div {
+	height: 15vw;
+    min-height: 260px;
+    overflow: hidden;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.certificate-container h2 {
+	position: relative;
+    top: 0px;
+    z-index: 1;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #e4e8fe;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.certificate-container a {
+	position: relative;
+    top: 0px;
+    z-index: 1;
+    transition: all 0.3s;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    background: #4b8aff26;
+}
+
+.certificate-container a:hover {
+	filter: brightness(2);
+    color: white;
+    background: #023ee3b7;
+    box-shadow: 0px 0px 0px 4px inset var(--primary-color);
+}
+
+.certificate-container div img {
+	height: 100%;
+    transition: filter 0.3s;
+}
+
+.costumers-section {
+	background-color: rgb(255, 255, 255);
+	padding: 65px 0px 1px;
+	margin: 0px 0px 65px 0px;
+}
+
+button#send-mail {
+	width: min-content;
+	background: #6385ff;
+	border: 0px;
+	padding: 12px 40px;
+	font-size: 20px;
+	border-radius: 6px;
+	color: white;
+}
+
+/* animate screenshots */
+@keyframes float {
+	0% {}
+	
+    50% {}
+	
+    100% {}
+}
+
+
+.vl {
+	border-left: 6px dotted rgb(0, 1, 67);
+	height: 50px;
+	left: 50%;
+	margin-left: -3px;
+	padding-bottom: 20px;
+	top: 0;
+	position: relative;
+}
+
+/* projects end */
+@keyframes selector {
+	0% {
+		opacity: 1;
+	}
+	
+	50% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes expand-cta {
+	0% {
+		margin: 0px 0px 0px 0px;
+	}
+	
+	20% {
+		margin: 0px 10px 0px 10px;
+	}
+	
+	60% {
+		margin: 0px 0px 0px 0px;
+	}
 }
 
 @keyframes slide-up {
@@ -810,208 +1056,10 @@ iframe {
 	}
 }
 
-/* Slideshow container/costumers */
-.feature-kunde {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 45px;
-		justify-content: center;
-		align-content: center;
-		margin: 20px 0px 20px 0%;
-		padding: 6px 40px;
-		box-sizing: border-box;
-		transition: 0.2s;
+.slide-up-animation {
+	animation: slide-up 1s forwards;
 }
 
-#feature-kunde {
-	width: 25vw;
-	border-radius: 5%;
-	box-shadow: 5px 5px 5px rgb(163, 168, 173);
+.slide-up-animation-running {
+	animation-play-state: running;
 }
-
-.slideshow-container {
-	position: relative;
-	background: #fffffff1;
-  }
-  
-  .mySlides {
-	display: none;
-	padding: 45px 25%;
-	text-align: center;
-	pointer-events: none;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    margin-left: 250px;
-    padding: 13px;
-    color: rgba(136, 136, 136, 0.622);
-    font-weight: bold;
-    font-size: 25px;
-    border-radius: 10px;
-    user-select: none;
-}
-  
-  .next {
-	position: absolute;
-	right: 0;
-	border-radius: 10px;
-	margin-right: 250px;
-  }
-  
-  .prev:hover, .next:hover {
-	background-color: rgba(96, 96, 96, 0.45);
-	color: white;
-	transition: 0.3s;
-  }
-
-  q {font-style: italic;}
-  .author {
-	color: rgb(0, 28, 81);
-	font-weight: bold;
-	font-size: large;
-	margin-top: 10px;
-}
-
-.certificates {
-    align-items: flex-start;
-	animation: slide-up 0.5s;
-	padding-top: 55px;
-}
-
-.certificates h1 {
-    font-size: 3em;
-    margin: 0px 0px 10px 0%;
-	text-align: center;
-}
-
-.certificates p {
-    margin: 15px 0px 5px 0%;
-	text-align: center;
-}
-
-.certificate-container {
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-    gap: 45px;
-    justify-content: center;
-    align-content: center;
-    margin: 20px 0px 150px 0%;
-    padding: 0px 40px;
-    box-sizing: border-box;
-}
-
-.certificate-container div {
-    height: 15vw;
-    min-height: 260px;
-    overflow: hidden;
-    border-radius: 6px;
-    text-align: center;
-}
-
-.certificate-container h2 {
-    position: relative;
-    top: 0px;
-    z-index: 1;
-    transition: all 0.2s;
-    margin-bottom: 20px;
-    line-height: 1.4;
-    color: #e4e8fe;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.certificate-container a {
-    position: relative;
-    top: 0px;
-    z-index: 1;
-    transition: all 0.3s;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 2px;
-    text-decoration: none;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    background: #4b8aff26;
-}
-
-.certificate-container a:hover {
-    filter: brightness(2);
-    color: white;
-    background: #023ee3b7;
-    box-shadow: 0px 0px 0px 4px inset var(--primary-color);
-}
-
-.certificate-container div img {
-    height: 100%;
-    transition: filter 0.3s;
-}
-
-.costumers-section {
-	background-color: rgb(255, 255, 255);
-	padding: 65px 0px 1px;
-	margin: 0px 0px 65px 0px;
-}
-
-button#send-mail {
-	width: min-content;
-	background: #6385ff;
-	border: 0px;
-	padding: 12px 40px;
-	font-size: 20px;
-	border-radius: 6px;
-	color: white;
-}
-
-/* animate screenshots */
-@keyframes float {
-    0% {}
-
-    50% {}
-
-    100% {}
-}
-
-/* projects end */
-@keyframes selector {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes expand-cta {
-    0% {
-        margin: 0px 0px 0px 0px;
-    }
-
-    20% {
-        margin: 0px 10px 0px 10px;
-    }
-
-    60% {
-        margin: 0px 0px 0px 0px;
-    }
-}
-
-.vl {
-	border-left: 6px dotted rgb(0, 1, 67);
-	height: 50px;
-	left: 50%;
-	margin-left: -3px;
-	padding-bottom: 20px;
-	top: 0;
-	position: relative;
-  }
