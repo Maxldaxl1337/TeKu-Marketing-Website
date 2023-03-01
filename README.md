@@ -1,3 +1,3 @@
 # TeKu-Marketing-Website
 
-© All rights reserved under Echo Marketing
+© All rights reserved under TeKu Marketing
