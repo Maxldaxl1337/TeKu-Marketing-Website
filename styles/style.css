@@ -640,6 +640,14 @@ iframe {
 	animation-play-state: paused;
 }
 
+.headerunserekunden {
+	opacity: 0;
+	text-align: center;
+	font-size: 4vh;
+	animation: slide-up 0.4s forwards 0.4s;
+	animation-play-state: paused;
+}
+
 .review-slider {
 	min-height: 600px;
 	margin: 0px 20%;
