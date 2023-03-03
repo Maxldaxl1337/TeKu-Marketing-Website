@@ -47,7 +47,7 @@ observer.observe(document.querySelector('.desc4'));
 observer.observe(document.querySelector('.desc5'));
 observer.observe(document.querySelector('.mehrlesen'));
 
-observer.observe(document.querySelector(".slideshow-container"));
+observer.observe(document.querySelector(".review-slider"));
 observer.observe(document.querySelector(".headerkunden"));
 observer.observe(document.querySelector(".certificate-container"));
 
@@ -126,7 +126,6 @@ document.getElementById('proj-six').addEventListener('mouseleave', (e) => {
 })
 
 // SCROLLBAR FADE
-
 const scrollDiv = document.querySelector('.scroll-div');
 
 function startScroll() {
@@ -135,3 +134,4 @@ function startScroll() {
 }
 
 window.addEventListener('scroll', startScroll);
+

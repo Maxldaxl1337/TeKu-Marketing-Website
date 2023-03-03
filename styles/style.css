@@ -640,7 +640,9 @@ iframe {
 	animation-play-state: paused;
 }
 
-.slideshow-container {
+.review-slider {
+	min-height: 600px;
+	margin: 0px 20%;
 	position: relative;
 	background: #fffffff1;
 	opacity: 0;
@@ -648,11 +650,25 @@ iframe {
 	animation-play-state: paused;
 }
 
-.mySlides {
-	display: none;
+.review-slide {
+	/* position: fixed; */
 	padding: 45px 25%;
 	text-align: center;
 	pointer-events: none;
+	display: none;
+	opacity: 0;
+}
+
+.review-slide.active {
+	display: block;
+    opacity: 1;
+	animation: fade-in-customer 1s ease-in-out;
+	/* transition: opacity 1s ease-in-out 1s; */
+  }
+
+@keyframes fade-in-customer {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
 }
 
 .prev, .next {
