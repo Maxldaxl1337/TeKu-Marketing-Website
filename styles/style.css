@@ -628,11 +628,21 @@ iframe {
 		transition: 0.2s;
 	}
 	
+	
 	#feature-kunde {
 		width: 25vw;
-	border-radius: 5%;
-	box-shadow: 5px 5px 5px rgb(163, 168, 173);
-}
+		border-radius: 4%;
+		transition: 0.4s;
+	}
+	
+	#feature-kunde:hover {
+		border-radius: 7%;
+		box-shadow: 5px 5px 5px rgba(184, 184, 184, 0.561);
+		transform: scale(1.08);
+		transition: 1.4s ease;
+		transition-property: transform, border-radius, box-shadow;
+
+	}
 
 .headerkunden {
 	opacity: 0;
@@ -662,7 +672,6 @@ iframe {
 	/* position: fixed; */
 	padding: 45px 25%;
 	text-align: center;
-	pointer-events: none;
 	display: none;
 	opacity: 0;
 }
@@ -751,7 +760,7 @@ q {font-style: italic;}
 	height: 15vw;
     min-height: 260px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 10px;
     text-align: center;
 }
 
