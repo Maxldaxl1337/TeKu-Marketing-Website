@@ -145,4 +145,4 @@ setInterval(() => {
   if (!itemHovered) {
     autoSlide();
   }
-}, 5000);
+}, 6300);

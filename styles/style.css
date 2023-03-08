@@ -409,8 +409,8 @@ section.information-wScreen {
 }
 
 #textconclusion {
-	font-size: 18px;
-	background-color: rgb(241, 241, 241);
+	font-size: 19px;
+	background-color: rgb(228, 231, 241);
 	padding: 35px;
 	border-radius: 10px;
 	border: #4b5569;
@@ -493,7 +493,7 @@ object-fit: contain;
 
 .contact-section {
 	background-color: #fff;
-	padding-top: 90px;
+	padding-top: 10px;
 }
 
 .contact-section form {
@@ -637,7 +637,6 @@ iframe {
 	
 	#feature-kunde:hover {
 		border-radius: 7%;
-		box-shadow: 5px 5px 5px rgba(184, 184, 184, 0.561);
 		transform: scale(1.08);
 		transition: 1.4s ease;
 		transition-property: transform, border-radius, box-shadow;
@@ -659,61 +658,104 @@ iframe {
 }
 
 .review-slider {
-	min-height: 600px;
-	margin: 0px 20%;
-	position: relative;
-	background: #fffffff1;
 	opacity: 0;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
 }
 
 .review-slide {
-	/* position: fixed; */
-	padding: 45px 25%;
-	text-align: center;
 	display: none;
 	opacity: 0;
+	transition: .5s;
 }
 
 .review-slide.active {
 	display: block;
     opacity: 1;
-	animation: fade-in-customer 1s ease-in-out;
-	/* transition: opacity 1s ease-in-out 1s; */
+	animation: fade-in-customer 1.4s ease-in-out;
+	transition: opacity 1.4s ease-in-out 1.4s;
   }
 
+  figure.snip1390 {
+	font-family: inherit;
+	margin: 5% 33%;
+	min-height: 550px;
+	color: #000000;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 6px;
+	background-color: #2a3039;
+	padding: 30px;
+	background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: 1.6s ease;
+  }
+
+  .snip1390:hover {
+	border-radius: 14px;
+	transform: scale(1.05);
+	transition: 1.6s ease;
+	transition-property: transform, border-radius;
+  }
+  figure.snip1390 *,
+  figure.snip1390 *:before,
+  figure.snip1390 *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+  }
+  figure.snip1390 figcaption {
+	width: 100%;
+  }
+  figure.snip1390 h2,
+  figure.snip1390 h4,
+  figure.snip1390 blockquote {
+	margin: 0;
+  }
+  figure.snip1390 h2,
+  figure.snip1390 h4 {
+	font-weight: 300;
+  }
+  figure.snip1390 h2 {
+	color: #ffffff;
+  }
+  figure.snip1390 h4 {
+	color: #a6a6a6;
+  }
+  figure.snip1390 blockquote {
+	font-size: 1em;
+	padding: 45px 20px 40px 50px;
+	margin-top: 30px;
+	background-color: rgb(241, 241, 241);
+	border-radius: 5px;
+	box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+	text-align: left;
+	position: relative;
+  }
+  figure.snip1390 blockquote:before {
+	font-family: 'FontAwesome';
+	content: "\201C";
+	position: absolute;
+	font-size: 70px;
+	opacity: 0.25;
+	font-style: normal;
+	top: 0px;
+	left: 20px;
+  }
+  figure.snip1390 .profile {
+	width: 40%;
+	border-radius: 5%;
+	display: inline-block;
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+	margin-bottom: 10px;
+	border: solid 4px #4b5569
+  }
+  
 @keyframes fade-in-customer {
 	0% { opacity: 0;}
 	100% { opacity: 1;}
-}
-
-.prev, .next {
-	cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    margin-left: 250px;
-    padding: 13px;
-    color: rgba(136, 136, 136, 0.622);
-    font-weight: bold;
-    font-size: 25px;
-    border-radius: 10px;
-    user-select: none;
-}
-
-.next {
-	position: absolute;
-	right: 0;
-	border-radius: 10px;
-	margin-right: 250px;
-}
-
-.prev:hover, .next:hover {
-	background-color: rgba(96, 96, 96, 0.45);
-	color: white;
-	transition: 0.3s;
 }
 
 q {font-style: italic;}
@@ -728,6 +770,7 @@ q {font-style: italic;}
 	align-items: flex-start;
 	animation: slide-up 0.5s;
 	padding-top: 55px;
+	background-color: rgb(241, 241, 241);
 }
 
 .certificates h1 {
@@ -748,8 +791,8 @@ q {font-style: italic;}
     gap: 45px;
     justify-content: center;
     align-content: center;
-    margin: 20px 0px 150px 0%;
-    padding: 0px 40px;
+    margin: 20px 0px 120px 0%;
+    padding: 0px 40px 130px 40px;
     box-sizing: border-box;
 	opacity: 0;
 	animation: slide-up 0.4s forwards 0.4s;
@@ -805,7 +848,6 @@ q {font-style: italic;}
 .costumers-section {
 	background-color: rgb(255, 255, 255);
 	padding: 65px 0px 1px;
-	margin: 0px 0px 65px 0px;
 }
 
 button#send-mail {
