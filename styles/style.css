@@ -400,10 +400,10 @@ section.information-wScreen {
 
 #textconclusion {
 	font-size: 19px;
-	background-color: rgb(228, 231, 241);
+	background-color: rgb(235, 237, 244);
 	padding: 35px;
 	border-radius: 10px;
-	border: #5f6570;
+	border: #4f5665;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
