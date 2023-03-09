@@ -456,8 +456,9 @@ object-fit: contain;
 /* contact us */
 .contact-title {
 	padding: 10px 2%;
-	border-left: 8px solid #6385ff;
+	border-left: 8px solid #436af5;
 	margin-left: 4%;
+	margin-top: 9%;
 	animation: slide-up 0.5s forwards 0.4s;
 	animation-play-state: paused;
 	opacity: 0;
@@ -605,6 +606,38 @@ iframe {
 	background: transparent;
 }
 
+hr.border {
+	position: relative; /* make the parent element relative */
+	border: none; /* remove the border */
+	height: 6px; /* set the height of the hr element */
+	background: transparent; /* set the background color to transparent */
+	margin-left: 30%;
+	margin-right: 30%;
+  }
+  
+  hr.border::before {
+	content: ""; /* add an empty content to the pseudo-element */
+	position: absolute; /* position the pseudo-element absolutely */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 5px; /* apply the border-radius to the pseudo-element */
+	background: linear-gradient(to left, #020ebbbf, #0d7edaac); /* apply the gradient to the pseudo-element */
+  }
+
+.borderslideup {
+	animation: slide-up 0.6s forwards 0.4s;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
+.borderslideup1 {
+	animation: slide-up 0.6s forwards 0.4s;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
 /* Slideshow container/costumers */
 .feature-kunde {
 	display: flex;
@@ -669,12 +702,12 @@ iframe {
   figure.snip1390 {
 	font-family: inherit;
 	margin: 5% 33%;
-	min-height: 550px;
+	min-height: 570px;
 	color: #000000;
 	text-align: center;
 	font-size: 16px;
 	border-radius: 6px;
-	background-color: #d2d3db;
+	background-color: #2C3447;
 	padding: 30px;
 	background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
 	-webkit-box-sizing: border-box;
@@ -709,16 +742,16 @@ iframe {
 	font-weight: 300;
   }
   figure.snip1390 h2 {
-	color: #131315;
+	color: #ffffff;
   }
   figure.snip1390 h4 {
-	color: #25263d;
+	color: #a6a6a6;
   }
   figure.snip1390 blockquote {
 	font-size: 1em;
 	padding: 45px 20px 40px 50px;
 	margin-top: 30px;
-	background-color: rgb(213, 213, 213);
+	background-color: rgb(243, 243, 243);
 	border-radius: 5px;
 	box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
 	text-align: left;
@@ -760,7 +793,7 @@ q {font-style: italic;}
 	align-items: flex-start;
 	animation: slide-up 0.5s;
 	padding-top: 55px;
-	background-color: #fafafa;
+	background-color: #ffffff;
 }
 
 .certificates h1 {
@@ -781,7 +814,7 @@ q {font-style: italic;}
     gap: 45px;
     justify-content: center;
     align-content: center;
-    margin: 20px 0px 120px 0%;
+    margin: 20px 0px 0px 0%;
     padding: 0px 40px 130px 40px;
     box-sizing: border-box;
 	opacity: 0;

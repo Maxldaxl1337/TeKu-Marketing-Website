@@ -51,6 +51,8 @@ observer.observe(document.querySelector(".review-slider"));
 observer.observe(document.querySelector(".headerkunden"));
 //observer.observe(document.querySelector(".headerunserekunden"));
 observer.observe(document.querySelector(".certificate-container"));
+observer.observe(document.querySelector(".borderslideup"));
+observer.observe(document.querySelector(".borderslideup1"));
 
 observer.observe(document.querySelector('.contact-title'));
 observer.observe(document.querySelector('.contact-form'));
@@ -136,3 +138,8 @@ function startScroll() {
 
 window.addEventListener('scroll', startScroll);
 
+const options = {
+    root: null,
+    threshold: 0.5
+  };
+  
