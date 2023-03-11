@@ -28,7 +28,7 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('.logo420'));
 observer.observe(document.querySelector('.title-cloud'));
-observer.observe(document.querySelector('.text-cloud'));
+// observer.observe(document.querySelector('.text-cloud'));
 
 observer.observe(document.querySelector('.feature-00'));
 observer.observe(document.querySelector('.feature-0'));
@@ -49,6 +49,7 @@ observer.observe(document.querySelector('.mehrlesen'));
 
 observer.observe(document.querySelector(".review-slider"));
 observer.observe(document.querySelector(".headerkunden"));
+//observer.observe(document.querySelector(".headerunserekunden"));
 observer.observe(document.querySelector(".certificate-container"));
 observer.observe(document.querySelector(".borderslideup"));
 observer.observe(document.querySelector(".borderslideup1"));
@@ -131,14 +132,19 @@ document.getElementById('proj-six').addEventListener('mouseleave', (e) => {
 const scrollDiv = document.querySelector('.scroll-div');
 
 function startScroll() {
+  if (window.scrollY === 0) {
+    scrollDiv.style.backgroundColor = 'rgba(250, 250, 250, 45%)';
+    scrollDiv.style.backdropFilter = 'blur(0px)';
+  } else {
     scrollDiv.style.backgroundColor = 'rgb(250 250 250 / 75%)';
     scrollDiv.style.backdropFilter = 'blur(8px)';
+  }
 }
 
 window.addEventListener('scroll', startScroll);
 
 const options = {
-    root: null,
-    threshold: 0.5
-  };
+  root: null,
+  threshold: 0.5
+};
   
