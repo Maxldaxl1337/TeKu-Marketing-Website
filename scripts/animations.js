@@ -49,7 +49,6 @@ observer.observe(document.querySelector('.mehrlesen'));
 
 observer.observe(document.querySelector(".review-slider"));
 observer.observe(document.querySelector(".headerkunden"));
-//observer.observe(document.querySelector(".headerunserekunden"));
 observer.observe(document.querySelector(".certificate-container"));
 observer.observe(document.querySelector(".borderslideup"));
 observer.observe(document.querySelector(".borderslideup1"));
