@@ -205,6 +205,17 @@ section.information-wScreen {
 	transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+section.information-wScreenTop {
+	display: flex;
+	grid-template-columns: max-content;
+	width: auto;
+	height: auto;
+	box-sizing: border-box;
+	flex-direction: column;
+	height: 100vh;
+	background-color: #000000;
+}
+
 .illustration1 img {
 	height: 100%;
 	width: 100%;
